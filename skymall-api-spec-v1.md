@@ -937,7 +937,7 @@ The database contains the following live data:
 
 All test user passwords: `pass1234`
 
-### Orders (24 total)
+### Orders (44 total)
 
 | ID | User           | Total ($) | Items                                                        |
 |----|----------------|-----------|--------------------------------------------------------------|
@@ -965,16 +965,60 @@ All test user passwords: `pass1234`
 | 23 | david_robert   | 1,059.96  | Smartphone X x1, Coffee Beans x3                            |
 | 24 | lisa_white     | 889.97    | Espresso Machine x1, Robot Vacuum x1, Hair Dryer Pro x1     |
 | 25 | tom_park       | 169.96    | The Art of SQL x2, History of the World x1, Sci-Fi Anthology x1 |
+| 26 | jessica_taylor | 192.95    | Vitamin C Serum x1, Moisturizing Cream x1, Sunscreen x2, Hair Dryer x1 |
+| 27 | chris_wilson   | 265.96    | Mechanical Keyboard x1, Gaming Mouse x1, Dark Chocolate x2  |
+| 28 | sofia_jung     | 199.94    | Modern Web Dev x1, AI/ML Basics x1, Wool Scarf x1, T-Shirt x3 |
+| 29 | jane_smith     | 739.97    | Espresso Machine x1, Air Fryer x1, Non-Stick Cookware Set x1|
+| 30 | ryan_lee       | 329.92    | LEGO Space Station x1, RC Car x1, Green Tea Set x4, Coffee Beans x2 |
+| 31 | susan_lee      | 1,349.98  | Smartphone X x1, Wireless Headphones x1                     |
+| 32 | peter_jones    | 537.95    | Yoga Mat x3, Hiking Backpack x1, Dumbbell Set x1, Camping Tent x1 |
+| 33 | anna_kim       | 315.97    | Women's Denim Jeans x1, Winter Jacket x1, Moisturizing Cream x1 |
+| 34 | david_robert   | 264.94    | Art of SQL x1, History of World x2, Sci-Fi Anthology x1, AI/ML x1 |
+| 35 | mia_choi       | 1,279.96  | 4K Smart TV x1, Robot Vacuum x1, Bluetooth Speaker x2       |
+| 36 | tom_park       | 329.97    | Air Fryer x1, Non-Stick Cookware Set x1, Hair Dryer Pro x1  |
+| 37 | lisa_white     | 297.94    | Running Shoes x1, Wool Scarf x2, Green Tea Set x3, Dark Chocolate x1 |
+| 38 | john_doe       | 379.96    | LEGO Space Station x2, Board Game x1, Gaming Mouse x1       |
+| 39 | michael_brown  | 514.80    | Green Tea Set x10, Dark Chocolate x5, Coffee Beans x5       |
+| 40 | emily_davis    | 1,999.99  | Laptop Pro 15 inch x1                                        |
+| 41 | sofia_jung     | 789.96    | Mountain Bike x1, Hiking Backpack x1, Coffee Beans x3       |
+| 42 | jessica_taylor | 1,219.97  | Smartphone X x1, Bluetooth Speaker x1, Mechanical Keyboard x1|
+| 43 | ryan_lee       | 469.95    | T-Shirt x2, Denim Jeans x1, Running Shoes x1, Winter Jacket x1, Belt x1 |
+| 44 | chris_wilson   | 196.95    | Vitamin C Serum x3, Board Game x1, RC Car x1                |
+| 45 | jane_smith     | 1,074.89  | 4K Smart TV x1, Moisturizing Cream x2, Green Tea Set x5, Yoga Mat x3 |
+
+### User Order Summary
+
+| User           | Orders | Total Spent ($) | Avg Order ($) |
+|----------------|--------|-----------------|---------------|
+| sofia_jung     | 3      | 3,789.88        | 1,263.29      |
+| john_doe       | 5      | 3,239.80        | 647.96        |
+| emily_davis    | 3      | 2,919.92        | 973.31        |
+| peter_jones    | 2      | 2,587.93        | 1,293.97      |
+| jane_smith     | 4      | 2,156.81        | 539.20        |
+| susan_lee      | 2      | 1,999.96        | 999.98        |
+| testuser       | 1      | 1,649.97        | 1,649.97      |
+| jessica_taylor | 3      | 1,552.88        | 517.63        |
+| mia_choi       | 2      | 1,474.93        | 737.47        |
+| michael_brown  | 3      | 1,466.76        | 488.92        |
+| david_robert   | 2      | 1,324.90        | 662.45        |
+| ryan_lee       | 3      | 1,269.83        | 423.28        |
+| lisa_white     | 2      | 1,187.91        | 593.96        |
+| tom_park       | 3      | 819.89          | 273.30        |
+| chris_wilson   | 3      | 782.87          | 260.96        |
+| anna_kim       | 3      | 699.89          | 233.30        |
 
 ### Data Statistics
 
 - **Total products**: 37 (across 8 categories)
-- **Price range**: $18.99 (Sunscreen) ~ $1,999.99 (Laptop Pro)
+- **Price range**: $18.99 (Sunscreen SPF 50+) ~ $1,999.99 (Laptop Pro 15 inch)
 - **Total users**: 20 (5 ADMIN, 3 MANAGER, 12 USER)
-- **Total orders**: 24 (from 15 different users)
+- **Total orders**: 44 (from 16 different users)
 - **Order value range**: $109.97 ~ $2,799.98
-- **Most ordered user**: john_doe (4 orders, $2,859.84 total)
-- **Highest single order**: sofia_jung — $2,799.98 (Laptop + TV)
+- **Top spender**: sofia_jung (3 orders, $3,789.88 total)
+- **Most orders**: john_doe (5 orders, $3,239.80 total)
+- **Highest single order**: sofia_jung — order #18, $2,799.98 (Laptop Pro + 4K Smart TV)
+- **Largest item order**: ryan_lee — order #43, 5 different products in one order
+- **Bulk buyer**: michael_brown — order #39, 20 items total (Food & Beverages bulk)
 
 ---
 
