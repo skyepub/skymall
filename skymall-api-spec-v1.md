@@ -4,7 +4,7 @@
 
 SkyMall is a shopping mall backend that provides product catalog management, user management, order processing, and sales reporting through a RESTful API. Built with Spring Boot and secured with JWT authentication.
 
-- **Base URL**: `http://localhost:8080`
+- **Base URL**: `http://localhost:9090`
 - **Content-Type**: `application/json`
 - **Authentication**: Bearer Token (JWT)
 
@@ -1026,7 +1026,7 @@ All test user passwords: `pass1234`
 
 **Step 1: Register and get token**
 ```
-POST http://localhost:8080/api/auth/register
+POST http://localhost:9090/api/auth/register
 Content-Type: application/json
 
 {
@@ -1039,17 +1039,17 @@ Content-Type: application/json
 
 **Step 2: Browse products**
 ```
-GET http://localhost:8080/api/products?page=0&size=5&sort=price,asc
+GET http://localhost:9090/api/products?page=0&size=5&sort=price,asc
 ```
 
 **Step 3: Search products**
 ```
-GET http://localhost:8080/api/products/search?keyword=laptop&page=0&size=10
+GET http://localhost:9090/api/products/search?keyword=laptop&page=0&size=10
 ```
 
 **Step 4: Place an order (requires token)**
 ```
-POST http://localhost:8080/api/orders
+POST http://localhost:9090/api/orders
 Authorization: Bearer <accessToken>
 Content-Type: application/json
 
@@ -1064,12 +1064,12 @@ Content-Type: application/json
 
 **Step 5: Check order history**
 ```
-GET http://localhost:8080/api/orders/my?page=0&size=10
+GET http://localhost:9090/api/orders/my?page=0&size=10
 Authorization: Bearer <accessToken>
 ```
 
 **Step 6: View sales report (ADMIN/MANAGER only)**
 ```
-GET http://localhost:8080/api/orders/report?from=2025-01-01T00:00:00&to=2025-12-31T23:59:59
+GET http://localhost:9090/api/orders/report?from=2025-01-01T00:00:00&to=2025-12-31T23:59:59
 Authorization: Bearer <accessToken>
 ```

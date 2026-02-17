@@ -1,3 +1,6 @@
+server:
+  port: 9090
+
 spring:
   datasource:
     # MySQL 연결 설정
